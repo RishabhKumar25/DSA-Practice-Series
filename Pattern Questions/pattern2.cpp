@@ -3,6 +3,18 @@ using namespace std;
 
 int main(){
 
+
+
+  /*
+
+  * * * *
+  * * * *
+  * * * *
+  * * * *
+
+
+  */
+
   int rows;
   int columns;
   cin>>rows>>columns;
