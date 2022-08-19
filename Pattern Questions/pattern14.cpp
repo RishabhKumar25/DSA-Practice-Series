@@ -6,19 +6,20 @@ int main(){
 
   /*
 
-  A B C
-  B C D
-  C D E
+  A
+  B B
+  C C C
 
   */
 
   int n;
   cin>>n;
+  char ascii = 'A';
   for(int i =1;i<=n;i++){
-    for(int j=1;j<=n;j++){
-      char ascii = 'A'+i+j-2;
+    for(int j=1;j<=i;j++){
       cout<<ascii<<" ";
     }
+    ascii+=1;
     cout<<endl;
   }
 }

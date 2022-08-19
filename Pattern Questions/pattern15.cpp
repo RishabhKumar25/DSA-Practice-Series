@@ -6,18 +6,21 @@ int main(){
 
   /*
 
-  A B C
+  D
+  C D
   B C D
-  C D E
+  A B C D
 
   */
 
   int n;
   cin>>n;
   for(int i =1;i<=n;i++){
-    for(int j=1;j<=n;j++){
-      char ascii = 'A'+i+j-2;
-      cout<<ascii<<" ";
+    char start = ('A'+n-i);
+
+    for(int j=1;j<=i;j++){
+      cout<<start<<" ";
+      start+=1;
     }
     cout<<endl;
   }
